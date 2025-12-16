@@ -1,14 +1,13 @@
 function calcAverageCalories(days) {
     let calcColoriya = 0;
-    let dniv = 0;
     for (const day of days) {
         calcColoriya += day.calories;
     }
     let sered = 0;
     if (days.length>0) {
-        sered = (calcColoriya / days.length).toFixed(0);    
+        sered = Number((calcColoriya / days.length).toFixed(0));    
     }
-    return (sered);
+    return sered;
 }
 
 console.log(
